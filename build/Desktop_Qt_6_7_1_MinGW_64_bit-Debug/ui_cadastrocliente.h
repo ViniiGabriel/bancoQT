@@ -10,10 +10,9 @@
 #define UI_CADASTROCLIENTE_H
 
 #include <QtCore/QVariant>
-#include <QtWidgets/QAbstractButton>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QDialogButtonBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -27,13 +26,13 @@ QT_BEGIN_NAMESPACE
 class Ui_cadastroCliente
 {
 public:
-    QDialogButtonBox *buttonBox;
     QPushButton *btn_cadastrar;
     QLabel *labelCadastro;
     QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout_6;
     QRadioButton *radioCorrente;
     QRadioButton *radioEspecial;
+    QRadioButton *radioMaster;
     QWidget *layoutWidget1;
     QHBoxLayout *horizontalLayout_7;
     QLabel *label_limite;
@@ -52,24 +51,35 @@ public:
     QHBoxLayout *horizontalLayout;
     QLabel *label_4;
     QLineEdit *txt_renda;
-    QLabel *label_avisoInformacoes;
+    QLabel *label_informacoes;
+    QPushButton *pushButton;
 
     void setupUi(QDialog *cadastroCliente)
     {
         if (cadastroCliente->objectName().isEmpty())
             cadastroCliente->setObjectName("cadastroCliente");
-        cadastroCliente->resize(460, 347);
-        buttonBox = new QDialogButtonBox(cadastroCliente);
-        buttonBox->setObjectName("buttonBox");
-        buttonBox->setGeometry(QRect(110, 310, 341, 32));
-        buttonBox->setOrientation(Qt::Horizontal);
-        buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
+        cadastroCliente->resize(472, 364);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("address-book-new")));
+        cadastroCliente->setWindowIcon(icon);
+        cadastroCliente->setStyleSheet(QString::fromUtf8("background-color:#fff;"));
         btn_cadastrar = new QPushButton(cadastroCliente);
         btn_cadastrar->setObjectName("btn_cadastrar");
-        btn_cadastrar->setGeometry(QRect(0, 243, 441, 41));
+        btn_cadastrar->setGeometry(QRect(130, 260, 211, 24));
+        btn_cadastrar->setCursor(QCursor(Qt::PointingHandCursor));
+        btn_cadastrar->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
         labelCadastro = new QLabel(cadastroCliente);
         labelCadastro->setObjectName("labelCadastro");
-        labelCadastro->setGeometry(QRect(140, 290, 211, 16));
+        labelCadastro->setGeometry(QRect(130, 290, 211, 16));
+        labelCadastro->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
+        labelCadastro->setAlignment(Qt::AlignCenter);
         layoutWidget = new QWidget(cadastroCliente);
         layoutWidget->setObjectName("layoutWidget");
         layoutWidget->setEnabled(true);
@@ -79,13 +89,36 @@ public:
         horizontalLayout_6->setContentsMargins(0, 0, 0, 0);
         radioCorrente = new QRadioButton(layoutWidget);
         radioCorrente->setObjectName("radioCorrente");
+        radioCorrente->setCursor(QCursor(Qt::PointingHandCursor));
+        radioCorrente->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
 
         horizontalLayout_6->addWidget(radioCorrente);
 
         radioEspecial = new QRadioButton(layoutWidget);
         radioEspecial->setObjectName("radioEspecial");
+        radioEspecial->setCursor(QCursor(Qt::PointingHandCursor));
+        radioEspecial->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
 
         horizontalLayout_6->addWidget(radioEspecial);
+
+        radioMaster = new QRadioButton(layoutWidget);
+        radioMaster->setObjectName("radioMaster");
+        radioMaster->setCursor(QCursor(Qt::PointingHandCursor));
+        radioMaster->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
+
+        horizontalLayout_6->addWidget(radioMaster);
 
         layoutWidget1 = new QWidget(cadastroCliente);
         layoutWidget1->setObjectName("layoutWidget1");
@@ -95,12 +128,19 @@ public:
         horizontalLayout_7->setContentsMargins(0, 0, 0, 0);
         label_limite = new QLabel(layoutWidget1);
         label_limite->setObjectName("label_limite");
+        label_limite->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";"));
 
         horizontalLayout_7->addWidget(label_limite);
 
         txt_limite = new QLineEdit(layoutWidget1);
         txt_limite->setObjectName("txt_limite");
         txt_limite->setEnabled(true);
+        txt_limite->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
 
         horizontalLayout_7->addWidget(txt_limite);
 
@@ -114,11 +154,21 @@ public:
         horizontalLayout_4->setObjectName("horizontalLayout_4");
         label = new QLabel(layoutWidget2);
         label->setObjectName("label");
+        label->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+""));
 
         horizontalLayout_4->addWidget(label);
 
         txt_nome = new QLineEdit(layoutWidget2);
         txt_nome->setObjectName("txt_nome");
+        txt_nome->setCursor(QCursor(Qt::BusyCursor));
+        txt_nome->setAutoFillBackground(false);
+        txt_nome->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
 
         horizontalLayout_4->addWidget(txt_nome);
 
@@ -129,11 +179,20 @@ public:
         horizontalLayout_3->setObjectName("horizontalLayout_3");
         label_2 = new QLabel(layoutWidget2);
         label_2->setObjectName("label_2");
+        label_2->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+""));
 
         horizontalLayout_3->addWidget(label_2);
 
         txt_endereco = new QLineEdit(layoutWidget2);
         txt_endereco->setObjectName("txt_endereco");
+        txt_endereco->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;\n"
+""));
 
         horizontalLayout_3->addWidget(txt_endereco);
 
@@ -144,11 +203,18 @@ public:
         horizontalLayout_2->setObjectName("horizontalLayout_2");
         label_3 = new QLabel(layoutWidget2);
         label_3->setObjectName("label_3");
+        label_3->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";"));
 
         horizontalLayout_2->addWidget(label_3);
 
         txt_profissao = new QLineEdit(layoutWidget2);
         txt_profissao->setObjectName("txt_profissao");
+        txt_profissao->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
 
         horizontalLayout_2->addWidget(txt_profissao);
 
@@ -159,24 +225,45 @@ public:
         horizontalLayout->setObjectName("horizontalLayout");
         label_4 = new QLabel(layoutWidget2);
         label_4->setObjectName("label_4");
+        label_4->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";"));
 
         horizontalLayout->addWidget(label_4);
 
         txt_renda = new QLineEdit(layoutWidget2);
         txt_renda->setObjectName("txt_renda");
+        txt_renda->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181,181,181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
+        txt_renda->setMaxLength(32767);
 
         horizontalLayout->addWidget(txt_renda);
 
 
         verticalLayout->addLayout(horizontalLayout);
 
-        label_avisoInformacoes = new QLabel(cadastroCliente);
-        label_avisoInformacoes->setObjectName("label_avisoInformacoes");
-        label_avisoInformacoes->setGeometry(QRect(150, 220, 171, 16));
+        label_informacoes = new QLabel(cadastroCliente);
+        label_informacoes->setObjectName("label_informacoes");
+        label_informacoes->setGeometry(QRect(110, 230, 251, 20));
+        label_informacoes->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
+        label_informacoes->setAlignment(Qt::AlignCenter);
+        pushButton = new QPushButton(cadastroCliente);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(360, 310, 83, 29));
+        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 5px;\n"
+"border: 10px;"));
 
         retranslateUi(cadastroCliente);
-        QObject::connect(buttonBox, &QDialogButtonBox::accepted, cadastroCliente, qOverload<>(&QDialog::accept));
-        QObject::connect(buttonBox, &QDialogButtonBox::rejected, cadastroCliente, qOverload<>(&QDialog::reject));
 
         QMetaObject::connectSlotsByName(cadastroCliente);
     } // setupUi
@@ -185,15 +272,18 @@ public:
     {
         cadastroCliente->setWindowTitle(QCoreApplication::translate("cadastroCliente", "Cadastro", nullptr));
         btn_cadastrar->setText(QCoreApplication::translate("cadastroCliente", "Cadastrar Cliente", nullptr));
-        labelCadastro->setText(QCoreApplication::translate("cadastroCliente", "Cliente cadastrado com sucesso", nullptr));
+        labelCadastro->setText(QCoreApplication::translate("cadastroCliente", " Cliente cadastrado com sucesso", nullptr));
         radioCorrente->setText(QCoreApplication::translate("cadastroCliente", "Conta Corrente", nullptr));
         radioEspecial->setText(QCoreApplication::translate("cadastroCliente", "Conta Especial", nullptr));
+        radioMaster->setText(QCoreApplication::translate("cadastroCliente", "Conta Master", nullptr));
         label_limite->setText(QCoreApplication::translate("cadastroCliente", "Limite:", nullptr));
         label->setText(QCoreApplication::translate("cadastroCliente", "Nome:", nullptr));
         label_2->setText(QCoreApplication::translate("cadastroCliente", "Endere\303\247o:", nullptr));
         label_3->setText(QCoreApplication::translate("cadastroCliente", "Profiss\303\243o:", nullptr));
-        label_4->setText(QCoreApplication::translate("cadastroCliente", "Renda", nullptr));
-        label_avisoInformacoes->setText(QCoreApplication::translate("cadastroCliente", "Preencha todas as informa\303\247\303\265es", nullptr));
+        label_4->setText(QCoreApplication::translate("cadastroCliente", "Renda:", nullptr));
+        txt_renda->setInputMask(QString());
+        label_informacoes->setText(QCoreApplication::translate("cadastroCliente", "        Preencha todas as informa\303\247\303\265es", nullptr));
+        pushButton->setText(QCoreApplication::translate("cadastroCliente", "OK", nullptr));
     } // retranslateUi
 
 };

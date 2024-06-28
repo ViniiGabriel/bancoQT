@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>relatorio</class>
+ <widget class="QDialog" name="relatorio">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>714</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Relatório de Transações</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="address-book-new"/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#fff;
+</string>
+  </property>
+  <widget class="QTableWidget" name="tb_listaRelatorio">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>91</y>
+     <width>681</width>
+     <height>411</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>22</x>
+     <y>19</y>
+     <width>461</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Black</family>
+     <pointsize>28</pointsize>
+     <italic>false</italic>
+     <fontweight>Black</fontweight>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 28pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string>Relatório de Transações</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_voltar">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>520</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+   </property>
+   <property name="text">
+    <string>Voltar</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

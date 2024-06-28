@@ -21,9 +21,11 @@ private slots:
 
     void on_radioCorrente_clicked();
 
-    void on_radioEspecial_clicked(bool checked);
-
     void on_btn_cadastrar_clicked();
+
+    void on_radioMaster_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::cadastroCliente *ui;

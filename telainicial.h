@@ -27,6 +27,8 @@ private slots:
 
     void on_btn_consulta_clicked();
 
+    void on_btn_relatorio_clicked();
+
 private:
     Ui::telaInicial *ui;
 };

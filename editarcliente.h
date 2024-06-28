@@ -20,10 +20,13 @@ private slots:
 
     void on_radio_especial_clicked();
 
+    void on_radio_master_clicked();
+
     void on_btn_gravar_clicked();
 
 private:
     Ui::editarCliente *ui;
+    int m_id;
 };
 
 #endif // EDITARCLIENTE_H

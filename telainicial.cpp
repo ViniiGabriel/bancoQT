@@ -3,6 +3,7 @@
 #include "cadastrocliente.h"
 #include "listaclientes.h"
 #include "telaidconta.h"
+#include "relatorio.h"
 #include <QDir>
 
 telaInicial::telaInicial(QWidget *parent)
@@ -12,7 +13,7 @@ telaInicial::telaInicial(QWidget *parent)
     ui->setupUi(this);
 
     QSqlDatabase bancoDeDados=QSqlDatabase::addDatabase("QSQLITE");
-    bancoDeDados.setDatabaseName("../../bancoDeDados/db_banco");
+    bancoDeDados.setDatabaseName("C:/Users/snowb/OneDrive/Documentos/GitHub/bancoQT/bancoDeDados/db_banco");
     bancoDeDados.open();
 
 }
@@ -43,5 +44,13 @@ void telaInicial::on_btn_consulta_clicked()
     telaIdConta telaID;
     telaID.setModal(true);
     telaID.exec();
+}
+
+
+void telaInicial::on_btn_relatorio_clicked()
+{
+    relatorio listaRelatorio;
+    listaRelatorio.setModal(true);
+    listaRelatorio.exec();
 }
 

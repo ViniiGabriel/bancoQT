@@ -24,6 +24,8 @@ private slots:
 
     void on_btn_transferencia_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::consultaCliente *ui;
     int id;

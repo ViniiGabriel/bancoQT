@@ -10,21 +10,31 @@
     <height>392</height>
    </rect>
   </property>
-  <property name="windowTitle">
-   <string>Dialog</string>
+  <property name="acceptDrops">
+   <bool>false</bool>
   </property>
-  <widget class="QWidget" name="">
+  <property name="windowTitle">
+   <string>Editar Cliente</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="address-book-new"/>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>20</y>
-     <width>90</width>
+     <width>102</width>
      <height>22</height>
     </rect>
    </property>
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
+      </property>
       <property name="text">
        <string>ID:</string>
       </property>
@@ -32,6 +42,10 @@
     </item>
     <item>
      <widget class="QLabel" name="txt_id">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
+      </property>
       <property name="text">
        <string>TextLabel</string>
       </property>
@@ -39,7 +53,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -51,28 +65,44 @@
    <layout class="QHBoxLayout" name="horizontalLayout_7">
     <item>
      <widget class="QLabel" name="label_limite">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
+      </property>
       <property name="text">
        <string>Limite:</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="txt_limite"/>
+     <widget class="QLineEdit" name="txt_limite">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
      <y>200</y>
-     <width>241</width>
+     <width>321</width>
      <height>57</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QLabel" name="label_6">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
+      </property>
       <property name="text">
        <string>Tipo de conta:</string>
       </property>
@@ -82,6 +112,16 @@
      <layout class="QHBoxLayout" name="horizontalLayout_6">
       <item>
        <widget class="QRadioButton" name="radio_corrente">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+        </property>
         <property name="text">
          <string>Corrente</string>
         </property>
@@ -89,8 +129,35 @@
       </item>
       <item>
        <widget class="QRadioButton" name="radio_especial">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+        </property>
         <property name="text">
          <string>Especial</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radio_master">
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Master</string>
         </property>
        </widget>
       </item>
@@ -98,7 +165,7 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -112,13 +179,25 @@
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
        <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
+        </property>
         <property name="text">
          <string>Nome:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="txt_nome"/>
+       <widget class="QLineEdit" name="txt_nome">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -126,13 +205,25 @@
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
        <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
+        </property>
         <property name="text">
          <string>Profissão:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="txt_profissao"/>
+       <widget class="QLineEdit" name="txt_profissao">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -140,13 +231,25 @@
      <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
        <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
+        </property>
         <property name="text">
          <string>Endereço:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="txt_endereco"/>
+       <widget class="QLineEdit" name="txt_endereco">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
@@ -154,19 +257,31 @@
      <layout class="QHBoxLayout" name="horizontalLayout_5">
       <item>
        <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
+        </property>
         <property name="text">
          <string>Renda:</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="txt_renda"/>
+       <widget class="QLineEdit" name="txt_renda">
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -178,6 +293,16 @@
    <layout class="QHBoxLayout" name="horizontalLayout_8">
     <item>
      <widget class="QPushButton" name="btn_gravar">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+      </property>
       <property name="text">
        <string>Gravar</string>
       </property>
@@ -185,6 +310,16 @@
     </item>
     <item>
      <widget class="QPushButton" name="pushButton_2">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+      </property>
       <property name="text">
        <string>Cancelar</string>
       </property>

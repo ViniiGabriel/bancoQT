@@ -12,6 +12,7 @@ protected:
     const float m_accountLimit;
     int m_id;
 
+
 public:
     ContaEspecial(Client *client, float balance = 0, float limit = 0, float limiteDisponivel = 0, int id=0)
         : Account(client, balance), m_limit(limiteDisponivel), m_accountLimit(limit), m_id(id) {}
@@ -65,22 +66,21 @@ public:
         } else {
             return false;
         }
-
-
     }
 
-    bool Transfer(Account *client, float value)
-    {
-
-        if (value <= m_balance + m_limit)
+        bool Transfer(Account *client, float value)
         {
-            Withdraw(value);
-            client->Deposit(value);
-            return true;
-        } else {
-            return false;
+
+            if (value <= m_balance + m_limit)
+            {
+                Withdraw(value);
+                client->Deposit(value);
+                return true;
+            } else {
+                return false;
+            }
         }
-    }
+
 };
 
 #endif // CONTAESPECIAL_H

@@ -3,6 +3,7 @@ release/consultacliente.o
 release/editarcliente.o
 release/listaclientes.o
 release/main.o
+release/relatorio.o
 release/teladeposito.o
 release/telaidconta.o
 release/telainicial.o
@@ -12,6 +13,7 @@ release/moc_cadastrocliente.o
 release/moc_consultacliente.o
 release/moc_editarcliente.o
 release/moc_listaclientes.o
+release/moc_relatorio.o
 release/moc_teladeposito.o
 release/moc_telaidconta.o
 release/moc_telainicial.o
