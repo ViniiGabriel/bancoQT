@@ -13,7 +13,7 @@ telaInicial::telaInicial(QWidget *parent)
     ui->setupUi(this);
 
     QSqlDatabase bancoDeDados=QSqlDatabase::addDatabase("QSQLITE");
-    bancoDeDados.setDatabaseName("C:/Users/snowb/OneDrive/Documentos/GitHub/bancoQT/bancoDeDados/db_banco");
+    bancoDeDados.setDatabaseName("../../../bancoDeDados/db_banco");
     bancoDeDados.open();
 
 }
