@@ -22,6 +22,8 @@ private slots:
 
     void on_btn_pesquisa_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::listaClientes *ui;
 };

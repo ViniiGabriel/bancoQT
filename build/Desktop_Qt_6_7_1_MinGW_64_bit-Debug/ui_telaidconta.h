@@ -10,6 +10,7 @@
 #define UI_TELAIDCONTA_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
@@ -30,18 +31,47 @@ public:
         if (telaIdConta->objectName().isEmpty())
             telaIdConta->setObjectName("telaIdConta");
         telaIdConta->resize(399, 234);
+        QIcon icon(QIcon::fromTheme(QString::fromUtf8("address-book-new")));
+        telaIdConta->setWindowIcon(icon);
+        telaIdConta->setStyleSheet(QString::fromUtf8("background-color:#fff;"));
         label = new QLabel(telaIdConta);
         label->setObjectName("label");
-        label->setGeometry(QRect(120, 30, 171, 51));
+        label->setGeometry(QRect(110, 10, 171, 51));
         QFont font;
-        font.setPointSize(18);
+        font.setFamilies({QString::fromUtf8("Segoe UI Black")});
+        font.setPointSize(15);
+        font.setWeight(QFont::Black);
+        font.setItalic(false);
         label->setFont(font);
+        label->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 15pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 10px;\n"
+"border: 10px;\n"
+"\n"
+"\n"
+""));
         pushButton = new QPushButton(telaIdConta);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(110, 160, 161, 41));
+        pushButton->setGeometry(QRect(110, 160, 171, 41));
+        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 9pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 10px;\n"
+"border: 10px;\n"
+""));
         txt_id = new QLineEdit(telaIdConta);
         txt_id->setObjectName("txt_id");
-        txt_id->setGeometry(QRect(50, 80, 291, 61));
+        txt_id->setGeometry(QRect(110, 80, 171, 61));
+        txt_id->setLayoutDirection(Qt::LeftToRight);
+        txt_id->setStyleSheet(QString::fromUtf8("color: rgb(0,0,0);\n"
+"font: 900 15pt \"Segoe UI Black\";\n"
+"background-color:rgb(181, 181, 181);\n"
+"border-radius: 10px;\n"
+"border: 10px;\n"
+""));
+        txt_id->setAlignment(Qt::AlignCenter);
 
         retranslateUi(telaIdConta);
 
@@ -51,7 +81,7 @@ public:
     void retranslateUi(QDialog *telaIdConta)
     {
         telaIdConta->setWindowTitle(QCoreApplication::translate("telaIdConta", "ID", nullptr));
-        label->setText(QCoreApplication::translate("telaIdConta", "ID da conta:", nullptr));
+        label->setText(QCoreApplication::translate("telaIdConta", "     ID da conta", nullptr));
         pushButton->setText(QCoreApplication::translate("telaIdConta", "Consultar", nullptr));
     } // retranslateUi
 

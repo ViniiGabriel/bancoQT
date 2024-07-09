@@ -13,41 +13,9 @@
   <property name="windowTitle">
    <string>Lista de Clientes</string>
   </property>
-  <widget class="QDialogButtonBox" name="buttonBox">
-   <property name="geometry">
-    <rect>
-     <x>440</x>
-     <y>560</y>
-     <width>351</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-   <property name="standardButtons">
-    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>-10</y>
-     <width>351</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>ADAM.CG PRO</family>
-     <pointsize>28</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Lista de Clientes</string>
-   </property>
-  </widget>
+  <property name="windowIcon">
+   <iconset theme="address-book-new"/>
+  </property>
   <widget class="QTableWidget" name="tb_lista">
    <property name="geometry">
     <rect>
@@ -56,6 +24,12 @@
      <width>771</width>
      <height>371</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="gridStyle">
+    <enum>Qt::SolidLine</enum>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget">
@@ -70,18 +44,40 @@
    <layout class="QHBoxLayout" name="horizontalLayout">
     <item>
      <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
+      </property>
       <property name="text">
        <string>Pesquisar nome:</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QLineEdit" name="txt_nome"/>
+     <widget class="QLineEdit" name="txt_nome">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+      </property>
+     </widget>
     </item>
     <item>
      <widget class="QPushButton" name="btn_pesquisa">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+      </property>
       <property name="text">
-       <string>Pesquisa</string>
+       <string>Pesquisar</string>
       </property>
      </widget>
     </item>
@@ -99,6 +95,16 @@
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
      <widget class="QPushButton" name="btn_excluir">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+      </property>
       <property name="text">
        <string>Excluir</string>
       </property>
@@ -106,6 +112,16 @@
     </item>
     <item>
      <widget class="QPushButton" name="btn_editar">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+      </property>
       <property name="text">
        <string>Editar</string>
       </property>
@@ -113,40 +129,54 @@
     </item>
    </layout>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>311</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 28pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string>Lista de clientes</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>550</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 5px;
+border: 10px;</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>accepted()</signal>
-   <receiver>listaClientes</receiver>
-   <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>buttonBox</sender>
-   <signal>rejected()</signal>
-   <receiver>listaClientes</receiver>
-   <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

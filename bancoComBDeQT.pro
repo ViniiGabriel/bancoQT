@@ -14,6 +14,7 @@ SOURCES += \
     editarcliente.cpp \
     listaclientes.cpp \
     main.cpp \
+    relatorio.cpp \
     teladeposito.cpp \
     telaidconta.cpp \
     telainicial.cpp \
@@ -27,8 +28,10 @@ HEADERS += \
     consultacliente.h \
     contacorrente.h \
     contaespecial.h \
+    contamaster.h \
     editarcliente.h \
     listaclientes.h \
+    relatorio.h \
     teladeposito.h \
     telaidconta.h \
     telainicial.h \
@@ -40,6 +43,7 @@ FORMS += \
     consultacliente.ui \
     editarcliente.ui \
     listaclientes.ui \
+    relatorio.ui \
     teladeposito.ui \
     telaidconta.ui \
     telainicial.ui \

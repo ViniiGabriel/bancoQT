@@ -11,7 +11,13 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>ID</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="address-book-new"/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:#fff;</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
@@ -24,11 +30,24 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>18</pointsize>
+     <family>Segoe UI Black</family>
+     <pointsize>15</pointsize>
+     <italic>false</italic>
+     <fontweight>Black</fontweight>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 15pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+
+
+</string>
+   </property>
    <property name="text">
-    <string>ID da conta</string>
+    <string>     ID da conta</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -36,9 +55,20 @@
     <rect>
      <x>110</x>
      <y>160</y>
-     <width>161</width>
+     <width>171</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
    </property>
    <property name="text">
     <string>Consultar</string>
@@ -47,11 +77,25 @@
   <widget class="QLineEdit" name="txt_id">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>110</x>
      <y>80</y>
-     <width>291</width>
+     <width>171</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 15pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
  </widget>

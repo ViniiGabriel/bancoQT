@@ -10,35 +10,19 @@
     <height>601</height>
    </rect>
   </property>
+  <property name="cursor">
+   <cursorShape>BusyCursor</cursorShape>
+  </property>
   <property name="windowTitle">
    <string>Banco UFSC</string>
   </property>
   <property name="windowIcon">
-   <iconset theme="application-exit"/>
+   <iconset theme="address-book-new"/>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #fff;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>10</y>
-      <width>551</width>
-      <height>91</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <family>Airside Sans</family>
-      <pointsize>48</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>BANCO UFSC</string>
-    </property>
-    <property name="alignment">
-     <set>Qt::AlignCenter</set>
-    </property>
-   </widget>
    <widget class="QPushButton" name="btn_cadastro">
     <property name="geometry">
      <rect>
@@ -47,6 +31,20 @@
       <width>221</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="mouseTracking">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
     </property>
     <property name="text">
      <string>CADASTRAR CLIENTE</string>
@@ -61,6 +59,17 @@
       <height>71</height>
      </rect>
     </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
+    </property>
     <property name="text">
      <string>CONSULTAR CLIENTE</string>
     </property>
@@ -73,6 +82,17 @@
       <width>221</width>
       <height>71</height>
      </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
     </property>
     <property name="text">
      <string>LISTA DE CLIENTES</string>
@@ -89,11 +109,75 @@
     </property>
     <property name="font">
      <font>
-      <pointsize>12</pointsize>
+      <family>Segoe UI Black</family>
+      <pointsize>9</pointsize>
+      <italic>false</italic>
+      <fontweight>Black</fontweight>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+</string>
     </property>
     <property name="text">
      <string>Feito por: Bruno Arenhart Rodrigues e Vinícius Domingos Gabriel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_relatorio">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>438</y>
+      <width>221</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
+    </property>
+    <property name="text">
+     <string>RELATÓRIO DE TRANSAÇÕES</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>10</y>
+      <width>381</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI Black</family>
+      <pointsize>36</pointsize>
+      <italic>false</italic>
+      <fontweight>Black</fontweight>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0,0,0);
+font: 900 36pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>   BANCO UFSC</string>
     </property>
    </widget>
   </widget>

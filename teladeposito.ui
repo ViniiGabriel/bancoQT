@@ -11,24 +11,41 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Depósito</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="address-book-new"/>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>60</x>
      <y>30</y>
-     <width>341</width>
+     <width>281</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>23</pointsize>
+     <family>Segoe UI Black</family>
+     <pointsize>15</pointsize>
+     <italic>false</italic>
+     <fontweight>Black</fontweight>
     </font>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 15pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
+   </property>
    <property name="text">
-    <string>Valor para depositar:</string>
+    <string>       Valor para depositar:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLineEdit" name="txt_valor">
@@ -40,6 +57,20 @@
      <height>61</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 15pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
   </widget>
   <widget class="QPushButton" name="btn_depositar">
    <property name="geometry">
@@ -49,6 +80,17 @@
      <width>281</width>
      <height>61</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
    </property>
    <property name="text">
     <string>Depositar</string>

@@ -6,82 +6,149 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>632</width>
-    <height>418</height>
+    <width>533</width>
+    <height>369</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Transferência</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="address-book-new"/>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>20</y>
-     <width>401</width>
-     <height>71</height>
+     <y>10</y>
+     <width>331</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>24</pointsize>
+     <family>Segoe UI Black</family>
+     <pointsize>15</pointsize>
+     <italic>false</italic>
+     <fontweight>Black</fontweight>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 	15pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
    </property>
    <property name="text">
     <string>Valor da Transferência:</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLineEdit" name="txt_valor">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>100</y>
-     <width>321</width>
-     <height>81</height>
+     <x>130</x>
+     <y>80</y>
+     <width>271</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 15pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>170</x>
-     <y>180</y>
-     <width>271</width>
-     <height>71</height>
+     <x>100</x>
+     <y>150</y>
+     <width>331</width>
+     <height>61</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>24</pointsize>
+     <family>Segoe UI Black</family>
+     <pointsize>15</pointsize>
+     <italic>false</italic>
+     <fontweight>Black</fontweight>
     </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 15pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
    </property>
    <property name="text">
     <string>ID Destinatário</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QLineEdit" name="txt_id_destinatario">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>250</y>
-     <width>321</width>
-     <height>81</height>
+     <x>130</x>
+     <y>220</y>
+     <width>271</width>
+     <height>61</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 15pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>140</x>
-     <y>350</y>
-     <width>321</width>
+     <x>130</x>
+     <y>290</y>
+     <width>271</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>15</pointsize>
+     <family>Segoe UI Black</family>
+     <pointsize>9</pointsize>
+     <italic>false</italic>
+     <fontweight>Black</fontweight>
     </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(0,0,0);
+font: 900 9pt &quot;Segoe UI Black&quot;;
+background-color:rgb(181, 181, 181);
+border-radius: 10px;
+border: 10px;
+</string>
    </property>
    <property name="text">
     <string>Transferir</string>
